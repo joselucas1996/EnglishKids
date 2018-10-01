@@ -1,18 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import StackNavigator from 'react-navigation';
+import {createStackNavigator} from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import Home from './src/screens/Home';
+import Cadastro from './src/screens/Cadastro';
+import Login from './src/screens/Login';
+import Interna from './src/screens/Interna';
+import Preload from './src/screens/Preload';
 
-const Navegador = StackNavigator({
+
+const Navegador = createStackNavigator({
+  Preload:{
+    screen:Preload
+  },
   Home: {
     screen: Home
   },
@@ -26,3 +26,5 @@ const Navegador = StackNavigator({
     screen: Interna
   }
 });
+
+export default Navegador;
