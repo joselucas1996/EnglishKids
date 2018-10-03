@@ -21,15 +21,15 @@ export default class Numero extends Component{
         return(
             <ScrollView>
                 <View style={{ flex:1, flexDirection:'row', backgroundColor: "#079ed4", height:100, marginBottom:10,
-                    borderRadius:10, alignItems:"center", borderColor:"#000000"}}>
+                    borderRadius:10, alignItems:"center", borderColor:"#000000", justifyContent:"center"}}>
                     <View>
                         <TouchableOpacity onPress={this.voltar}>
                             <Image source={require('../imagem/voltar.png')} 
-                                style={{height:40, width:40, marginLeft:10, marginRight:60}} />
+                                style={{height:40, width:40, marginRight:90}} />
                         </TouchableOpacity>
                     </View>
-                    <View style={{justifyContent:"center"}}>
-                        <Text style={{color:"#FFFFFF", fontSize:30,fontWeight:'900'}}>Números</Text>
+                    <View style={{flex:1}}>
+                        <Text style={{color:"#FFFFFF", fontSize:30,fontWeight:"900"}}>NÚMEROS</Text>
                     </View>
                 </View>
                 <View style = {{flexDirection:'row', justifyContent: "space-between"}}>

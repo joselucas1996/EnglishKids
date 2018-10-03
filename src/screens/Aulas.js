@@ -45,11 +45,11 @@ export default class Aulas extends Component{
             <View style={styles.tela}>
                 <TouchableOpacity onPress={this.Numero} 
                     style={{ backgroundColor:"#a6bb24", height: 300, 
-                        flex:1, flexDirection: 'row', alignItems:'center', borderRadius:5}}>
+                        flex:1, flexDirection: 'row', alignItems:'center', borderBottomLeftRadius:5, borderBottomLeftRadius:5}}>
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
                         <Image source={require('../imagem/Numeros/1.png')} 
                             style={{height:85, width:64, marginTop:13, marginLeft:25, marginRight:25}}/>
-                        <View style={{textAlign:"center"}}>
+                        <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Números</Text>
                             <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender os números.</Text>
                         </View>
@@ -95,11 +95,11 @@ export default class Aulas extends Component{
                     style={{ backgroundColor:"#008B8B", height: 200, 
                         flex:1, flexDirection: 'row', alignItems:'center', borderRadius:5}}>
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
-                        <Image source={require('../imagem/Brinquedos/boneca.png')} 
+                        <Image source={require('../imagem/Frutas/uva.png')} 
                             style={styles.listaImagem}/>
                         <View>
-                            <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Brinquedos</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender brinquedos.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Frutas</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender frutas.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -107,11 +107,11 @@ export default class Aulas extends Component{
                     style={{ backgroundColor:"#FF8C00", height: 200, 
                         flex:1, flexDirection: 'row', alignItems:'center', borderRadius:5}}>
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
-                        <Image source={require('../imagem/Objetos/mamadeira.png')} 
-                            style={styles.listaImagem}/>
+                        <Image source={require('../imagem/Comidas/hamburguer.png')} 
+                            style={{height:70, width:65, marginLeft:25, marginRight: 25}}/>
                         <View>
-                            <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Objetos</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender objetos.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Comidas</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender comidas.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>

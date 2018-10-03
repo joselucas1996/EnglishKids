@@ -31,7 +31,7 @@ export default class Interna extends Component{
     render() {
         return(
             <ImageBackground source={bgImage} style={styles.backgroundContainer}>
-            <Image source={require('../imagem/hello.png')} style={{ height: 50, width: 300, marginBottom:15, marginTop:30}}/>
+            <Image source={require('../imagem/hello.png')} style={{ height: 55, width: 300, marginBottom:15, marginTop:30}}/>
             <Image source={require('../imagem/fonte.png')} style={{ height: 20, width: 300}}/>
             
             <Image source={require('../imagem/personagem.png')} 

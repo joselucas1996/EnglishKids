@@ -41,7 +41,7 @@ export default class ListaFuncoes extends Component{
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
                         <Image source={require('../imagem/aulas.png')} 
                             style={styles.listaImagem}/>
-                        <View style={{textAlign:"center"}}>
+                        <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Aulas</Text>
                             <Text style={{ color: "#FFFFFF", fontSize: 16}}>Aprenda brincando.</Text>
                         </View>
