@@ -7,6 +7,7 @@ import Cadastro from './src/screens/Cadastro';
 import Login from './src/screens/Login';
 import Interna from './src/screens/Interna';
 import Preload from './src/screens/Preload';
+import Funcoes from './src/screens/Funcoes';
 
 
 const Navegador = createStackNavigator({
@@ -24,7 +25,11 @@ const Navegador = createStackNavigator({
   },
   Interna:{
     screen: Interna
-  }
+  },
+  Funcoes: {
+    screen: Funcoes
+  },
+  
 });
 
 export default Navegador;

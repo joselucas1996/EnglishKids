@@ -1,4 +1,4 @@
-import React, { Component} from 'react';``
+import React, { Component} from 'react';
 import { View, Text, StyleSheet, ImageBackground, Image, TouchableOpacity } from'react-native';
 
 import bgImage from '../imagem/fundo1.jpg'
@@ -8,6 +8,8 @@ export default class Interna extends Component{
     constructor(props) {
         super(props);
         console.disableYellowBox = true; 
+
+        this.aprender = this.aprender.bind(this);
         
         firebase.auth().onAuthStateChanged((user) => {
             if(user) {
@@ -21,6 +23,10 @@ export default class Interna extends Component{
         title: "Interna",
         header:null
     }
+
+    aprender() {
+        this.props.navigation.navigate("Funcoes");
+    }
     render() {
         return(
             <ImageBackground source={bgImage} style={styles.backgroundContainer}>
@@ -29,7 +35,7 @@ export default class Interna extends Component{
             <Image source={require('../imagem/personagem.png')} 
                 style={styles.imgPersonagem}/>
             <View style={styles.botao}>
-                    <TouchableOpacity style={styles.btnLogin} onPress={this.logar}>
+                    <TouchableOpacity style={styles.btnLogin} onPress={this.aprender}>
                     <Image source={require('../imagem/entrar.png')} style={styles.btnAcessar}></Image>
                     </TouchableOpacity>
                 </View>

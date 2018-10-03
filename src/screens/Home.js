@@ -15,7 +15,7 @@ import logo from '../imagem/logo.png';
 
 const { width: WIDTH} = Dimensions.get('window')
 
-export default class App extends Component {
+export default class Home extends Component {
     static navigationOptions = {
         title:"Home",
         header: null
