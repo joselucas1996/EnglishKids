@@ -25,6 +25,7 @@ export default class Cadastro extends Component {
         };
 
         this.cadastrar = this.cadastrar.bind(this);
+        this.voltar = this.voltar.bind(this);
         firebase.auth().signOut();
     }
 
@@ -52,15 +53,21 @@ export default class Cadastro extends Component {
         }
     }
 
+    voltar() {
+        this.props.navigation.navigate('Home');
+    }
+
     static navigationOptions = {
         header: null
     }
     render(){
         return(
             <ImageBackground source={bgImage} style={styles.backgroundContainer}>
-                <View style={styles.titulo}>
-                    <Image source={require('../imagem/voltar.png')} style={styles.btnVoltar}></Image>
-                    <Text style={styles.text}>Cadastro</Text>
+                <View>
+                    <TouchableOpacity style={styles.titulo} onPress={this.voltar}>
+                        <Image source={require('../imagem/voltar.png')} style={styles.btnVoltar}></Image>
+                        <Text style={styles.text}>Cadastro</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.inputContainer}>
                     <TextInput 
@@ -100,22 +107,22 @@ const styles = StyleSheet.create({
       height:null
     },
     titulo:{
-        flexDirection:'row',
-        paddingTop:50
+        flexDirection:'row'
     },
     btnVoltar: {
-        marginLeft:15,
-        marginRight:20,
-        paddingTop:40,
-        height:35,
-        width:35
+        marginLeft:25,
+        marginRight:40,
+        marginTop:55,
+        height:40,
+        width:40
     },
     text: {
+        paddingTop:20,
         color:"#FFFFFF",
         fontSize:45,
         fontWeight: '500',
+        marginTop: 30,
         marginBottom: 10,
-        marginLeft:25,
         textAlign:"center"
     },
     inputContainer:{

@@ -14,7 +14,7 @@ export default class Aulas extends Component{
         this.Alfabeto = this.Alfabeto.bind(this);
         this.Cores = this.Cores.bind(this);
         this.Animais = this.Animais.bind(this);
-        this.Brinquedo = this.Brinquedo.bind(this);
+        this.Brinquedos = this.Brinquedos.bind(this);
         this.Objetos = this.Objetos.bind(this);
     }
 
@@ -31,8 +31,8 @@ export default class Aulas extends Component{
     Animais() {
         this.props.navigation.navigate("Animais")
     }
-    Brinquedo() {
-        this.props.navigation.navigate("Brinquedo")
+    Brinquedos() {
+        this.props.navigation.navigate("Brinquedos")
     }
     Objetos() {
         this.props.navigation.navigate("Objetos")

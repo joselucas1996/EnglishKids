@@ -5,6 +5,11 @@ import bgImage from '../imagem/fundo1.jpg'
 import firebase from '../Conexao/FirebaseConnection';
 export default class Interna extends Component{
 
+    static navigationOptions = {
+        title: "Interna",
+        header:null
+    }
+    
     constructor(props) {
         super(props);
         console.disableYellowBox = true; 
@@ -18,10 +23,6 @@ export default class Interna extends Component{
                 this.props.navigation.navigate("Home")
             }
         });
-    }
-    static navigationOptions = {
-        title: "Interna",
-        header:null
     }
 
     aprender() {

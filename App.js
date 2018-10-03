@@ -30,6 +30,11 @@ const Navegador = createStackNavigator({
     screen: Funcoes
   },
   
-});
+},{
+  navigationOptions:{
+    header:null
+  }
+}
+);
 
 export default Navegador;

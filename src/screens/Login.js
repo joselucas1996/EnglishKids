@@ -25,6 +25,7 @@ export default class Login extends Component {
         };
 
         this.logar = this.logar.bind(this);
+        this.voltar = this.voltar.bind(this);
         firebase.auth().signOut();
     }
 
@@ -46,6 +47,10 @@ export default class Login extends Component {
         }
     }
 
+    voltar() {
+        this.props.navigation.navigate('Home');
+    }
+
     static navigationOptions = {
         title:"Login",
         header:null
@@ -53,8 +58,11 @@ export default class Login extends Component {
     render(){
         return(
             <ImageBackground source={bgImage} style={styles.backgroundContainer}>
-                <View style={styles.titulo}>
-                    <Text style={styles.text}>Login</Text>
+                <View>
+                    <TouchableOpacity style={styles.titulo} onPress={this.voltar}>
+                        <Image source={require('../imagem/voltar.png')} style={styles.btnVoltar}></Image>
+                        <Text style={styles.text}>Login</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.inputContainer}>
                     <TextInput 
@@ -94,15 +102,23 @@ const styles = StyleSheet.create({
       height:null
     },
     titulo:{
-        alignItems: 'center'
+        flexDirection:'row'
+    },
+    btnVoltar: {
+        marginLeft:25,
+        marginRight:40,
+        marginTop:55,
+        height:40,
+        width:40
     },
     text: {
         paddingTop:20,
         color:"#FFFFFF",
         fontSize:45,
         fontWeight: '500',
-        marginTop: 25,
-        marginBottom: 10
+        marginTop: 30,
+        marginBottom: 10,
+        textAlign:"center"
     },
     inputContainer:{
         marginTop: 10
