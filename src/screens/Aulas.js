@@ -48,7 +48,7 @@ export default class Aulas extends Component{
                         flex:1, flexDirection: 'row', alignItems:'center', borderRadius:5}}>
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
                         <Image source={require('../imagem/Numeros/1.png')} 
-                            style={styles.listaImagem}/>
+                            style={{height:85, width:64, marginTop:13, marginLeft:25, marginRight:25}}/>
                         <View style={{textAlign:"center"}}>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Números</Text>
                             <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender os números.</Text>
@@ -133,8 +133,8 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     listaImagem: {
-        height:82,
-        width:60,
+        height:85,
+        width:64,
         marginLeft:25,
         marginRight:25
         

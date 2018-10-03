@@ -43,7 +43,7 @@ export default class ListaFuncoes extends Component{
                             style={styles.listaImagem}/>
                         <View style={{textAlign:"center"}}>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Aulas</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Aprenda da forma mais divertida.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Aprenda brincando.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -55,7 +55,7 @@ export default class ListaFuncoes extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Professor</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Tire dúvidas com professor online.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Professor onnline</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -79,7 +79,7 @@ export default class ListaFuncoes extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Sair</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Descanse e volte mais tarde.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>De uma pausa no estudo.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>

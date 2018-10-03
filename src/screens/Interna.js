@@ -31,13 +31,14 @@ export default class Interna extends Component{
     render() {
         return(
             <ImageBackground source={bgImage} style={styles.backgroundContainer}>
-            <Text style={styles.hello}>HELLO</Text>
-            <Text style={styles.h1}>VENHA APRENDER COMIGO!</Text>
+            <Image source={require('../imagem/hello.png')} style={{ height: 50, width: 300, marginBottom:15, marginTop:30}}/>
+            <Image source={require('../imagem/fonte.png')} style={{ height: 20, width: 300}}/>
+            
             <Image source={require('../imagem/personagem.png')} 
                 style={styles.imgPersonagem}/>
             <View style={styles.botao}>
                     <TouchableOpacity style={styles.btnLogin} onPress={this.aprender}>
-                    <Image source={require('../imagem/entrar.png')} style={styles.btnAcessar}></Image>
+                    <Image source={require('../imagem/aprender.png')} style={styles.btnAcessar}></Image>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
@@ -53,13 +54,6 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center'
     },
-    hello: {
-        textAlign:"center",
-        color:'blue',
-        fontWeight:'800',
-        fontSize:50,
-        margin:15
-    },
     h1: {
         textAlign:"center",
         color:'white',
@@ -67,9 +61,9 @@ const styles = StyleSheet.create({
         fontSize:24
     },
     imgPersonagem: {
-        width: 150,
-        height:300,
-        margin:30
+        width: 165,
+        height:340,
+        margin:20
     },
     btnAcessar: {
         width: 200,
