@@ -44,7 +44,7 @@ export default class Aulas extends Component{
         return(
             <View style={styles.tela}>
                 <TouchableOpacity onPress={this.Numero} 
-                    style={{ backgroundColor:"#a6bb24", height: 200, 
+                    style={{ backgroundColor:"#a6bb24", height: 300, 
                         flex:1, flexDirection: 'row', alignItems:'center', borderRadius:5}}>
                     <View style={{flex:1, flexDirection: 'row', alignItems:"center"}}>
                         <Image source={require('../imagem/Numeros/1.png')} 
@@ -75,7 +75,7 @@ export default class Aulas extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Cores</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender o cores.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender cores.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -87,7 +87,7 @@ export default class Aulas extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Animais</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender o animas.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender animais.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -99,7 +99,7 @@ export default class Aulas extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Brinquedos</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender o brinquedos.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender brinquedos.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
@@ -111,7 +111,7 @@ export default class Aulas extends Component{
                             style={styles.listaImagem}/>
                         <View>
                             <Text style={{ color: "#FFFFFF", fontSize:25, fontWeight:'900', textAlignVertical:"center"}}>Objetos</Text>
-                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender os objetos.</Text>
+                            <Text style={{ color: "#FFFFFF", fontSize: 16}}>Venha aprender objetos.</Text>
                         </View>
                     </View>
                 </TouchableOpacity>
